@@ -453,12 +453,12 @@ button:focus{
     font-size: 35px;
     font-weight: bold;
     color: #fff;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 }
 
 @media screen and (max-width: 670px) {
     .page-section__title--white{
-        margin-top: 155px;
+        /*margin-top: 155px;*/
     }
 }
 
@@ -511,10 +511,10 @@ button:focus{
 }
 
 .contact--bg{
-    -webkit-clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
-    background: url("../img/contact-us-background.png") no-repeat;
-    height: 360px;
+    /*-webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);*/
+    /*clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);*/
+    /*background: url("../img/contact-us-background.png") no-repeat;*/
+    /*height: 360px;*/
     position: relative;
     background-size: cover;
 }
@@ -524,10 +524,10 @@ button:focus{
 }
 
 @media screen and (max-width: 1198px) {
-    .contact--bg{
-        -webkit-clip-path: polygon(0 32%, 100% 15%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 32%, 100% 15%, 100% 100%, 0% 100%);
-    }
+    /*.contact--bg{*/
+        /*-webkit-clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0% 100%);*/
+        /*clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0% 100%);*/
+    /*}*/
 }
 
 @media screen and (max-width: 900px) {
@@ -540,8 +540,8 @@ button:focus{
     .contact--bg{
         /*-webkit-clip-path: polygon(0 35%, 100% 28%, 100% 100%, 0% 100%);*/
         /*clip-path: polygon(0 35%, 100% 28%, 100% 100%, 0% 100%);*/
-        -webkit-clip-path: polygon(0 28%, 100% 28%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 28%, 100% 28%, 100% 100%, 0% 100%);
+        /*-webkit-clip-path: polygon(0 28%, 100% 28%, 100% 100%, 0% 100%);*/
+        /*clip-path: polygon(0 28%, 100% 28%, 100% 100%, 0% 100%);*/
     }
 }
 
@@ -605,8 +605,8 @@ button:focus{
 }
 
 .letsGo--bg{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
+    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);*/
     background: url("../img/letsGo-background.png") no-repeat;
     height: 440px;
     position: relative;
@@ -615,8 +615,8 @@ button:focus{
 
 @media screen and (max-width: 430px) {
     .letsGo--bg{
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
+        /*clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
     }
 }
 
@@ -674,8 +674,8 @@ button:focus{
 }
 
 .video-section--bg{
-    -webkit-clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
+    /*-webkit-clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);*/
+    /*clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);*/
     background: url("../img/handshake-background.png") no-repeat;
     height: 490px;
     position: relative;
@@ -684,8 +684,8 @@ button:focus{
 
 @media screen and (max-width: 1198px) {
     .video-section--bg{
-        -webkit-clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
-        clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
+        /*-webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);*/
+        /*clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);*/
     }
 }
 
@@ -697,8 +697,8 @@ button:focus{
 
 @media screen and (max-width: 600px) {
     .video-section--bg{
-        -webkit-clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);
-        clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);
+        /*-webkit-clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);*/
+        /*clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);*/
         background-position: center center;
     }
 }
@@ -846,8 +846,8 @@ button:focus{
 }
 
 .overview--bg{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);*/
     background: url("../img/overview-background.png") no-repeat;
     height: 360px;
     position: relative;
@@ -863,15 +863,15 @@ button:focus{
 @media screen and (max-width: 900px) {
     .overview--bg{
         height: auto;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
-    }
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);*/
+        /*clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);*/
+    /*}*/
 }
 
 @media screen and (max-width: 607px) {
     .overview--bg{
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);*/
+        /*clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);*/
     }
 }
 
@@ -1014,8 +1014,8 @@ button:focus{
 }
 
 .contact-two--bg{
-    -webkit-clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);
-    clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);
+    /*-webkit-clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);*/
+    /*clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);*/
     height: 350px;
     position: relative;
 }
@@ -1095,8 +1095,8 @@ button:focus{
 }
 
 .footer--bg{
-    -webkit-clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 100%);
-    clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 100%);
+    /*-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
+    /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
     height: 650px;
     position: relative;
 }
@@ -1109,8 +1109,8 @@ button:focus{
 
 @media screen and (max-width: 991px) {
     .footer--bg{
-        -webkit-clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 100%);
-        clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 100%);
+        /*-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
+        /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
     }
 }
 
