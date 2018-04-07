@@ -248,6 +248,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-materialdocs
+  jekyll-remote-theme
 
 BUNDLED WITH
    1.16.1
