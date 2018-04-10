@@ -150,6 +150,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #eeeeee;
+    padding: 0 40px;
 }
 
 .supportingTitle {
@@ -159,6 +161,50 @@ section {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 640px;
+    height: 45vw;
+    max-height: 360px;
+}
+
+.videoOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('../img/play@2x.png');
+    background-size: auto 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.videoOverlay.hide, .videoOverlay.hide:hover {
+    background-image: none;
+    background-color: transparent;
+}
+
+.videoOverlay:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoWrapper video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .supporting p {
