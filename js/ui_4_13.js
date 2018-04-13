@@ -1,9 +1,26 @@
 (function() {
   window.onload = function() {
     let startedMlSectionAutoplay = false;
+    const installCode = document.getElementById('installCode');
     const mlSection = document.getElementById('mlSection');
     const video = document.getElementById('ml');
     const overlay1 = document.getElementById('mlOverlay');
+
+    function selectText(elementId, copyIt) {
+      if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(elementId));
+        range.select();
+        if (copyIt) document.execCommand('Copy');
+      } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(elementId));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        if (copyIt) document.execCommand('Copy');
+      }
+    }
+
     overlay1.addEventListener('click', function() {
       if (video.paused) {
         video.play();
@@ -12,6 +29,10 @@
         video.pause();
         overlay1.classList.remove('hide');
       }
+    });
+
+    installCode.addEventListener('click', function() {
+      selectText('installCode', true);
     });
 
     window.addEventListener('scroll', function () {
