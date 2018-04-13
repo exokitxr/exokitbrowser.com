@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#what-is">About</a>
+              <a class="nav-link js-scroll-trigger" href="#install">Install</a>
             </li>
             <li class="nav-item">
               <a target="_blank" class="nav-link js-scroll-trigger" href="https://github.com/webmixedreality/exokit">Github</a>
@@ -68,6 +68,9 @@
         </video>
         <div class="videoOverlay hide" id="mlOverlay"></div>
       </div>
+      <p class="supportingDetails">
+        Under the hood, everything is plain OpenGL, so it plays nice with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
+      </p>
     </section>
 
     <section class="intro">
@@ -80,8 +83,27 @@
     </section>
 
     <section class="supporting introSupporting">
-      <div class="supportingTitle"><h2>Some title here</h2></div>
-      <p>And supporting information here</p>
+      <div class="supportingTitle"><h2>Render in 2x FPS</h2></div>
+      <div class="multividWrapper">
+        <div class="videoWrapper">
+          <video id="fps1" playsinline>
+            <source src="./video/ml.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay hide"></div>
+        </div>
+        <div class="videoWrapper">
+          <video id="fps2" playsinline>
+            <source src="./video/ml.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay hide"></div>
+        </div>
+      </div>
+      <div class="vidCaptions">
+        <div class="vidCaption">Chrome 65</div>
+        <div class="vidCaption">Exokit</div>
+      </div>
     </section>
 
     <section class="detail">
@@ -93,9 +115,9 @@
       <div class="detailImage"></div>
     </section>
 
-    <section class="supporting detailSupporting">
-      <div class="supportingTitle"><h2>Some title here</h2></div>
-      <p>And supporting information here</p>
+    <section class="supporting detailSupporting" id="install">
+      <div class="supportingTitle"><h2>Install with npm. Build with JS.</h2></div>
+      <p>Installation code<br/>Some supporting details</p>
     </section>
 
     <footer>

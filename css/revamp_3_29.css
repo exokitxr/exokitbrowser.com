@@ -207,11 +207,30 @@ section {
     max-height: 100%;
 }
 
+.multividWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.multividWrapper .videoWrapper {
+    max-width: 46%;
+}
+
+.vidCaptions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vidCaption {
+    text-align: center;
+}
+
 .supporting p {
     text-align: center;
     font-size: 20px;
     /*height: 60%;*/
     margin-bottom: 0;
+    margin-top: 40px;
 }
 
 .wrapup {
@@ -267,6 +286,11 @@ section {
     #mainNav .navbar-nav > li > a.slack-badge:hover,
     #mainNav .navbar-nav > li > a.slack-badge:active {
         color: transparent;
+    }
+
+    #mainNav .navbar-nav > li > a:hover,
+    #mainNav .navbar-nav > li > a:focus:hover {
+        color: #DD6F84;
     }
 
     #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a,
