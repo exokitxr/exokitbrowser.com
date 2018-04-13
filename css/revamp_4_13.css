@@ -60,6 +60,11 @@ section {
     text-align: center;
 }
 
+.titleSection h1 span {
+    font-weight: 400 !important;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+}
+
 .hero, .intro, .detail {
     background: #ffffff;
     display: flex;
