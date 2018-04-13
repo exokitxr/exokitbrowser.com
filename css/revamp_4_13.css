@@ -49,6 +49,17 @@ section {
     position: relative;
 }
 
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.titleSection h1 {
+    text-align: center;
+}
+
 .hero, .intro, .detail {
     background: #ffffff;
     display: flex;
