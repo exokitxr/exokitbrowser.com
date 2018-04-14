@@ -41,6 +41,11 @@ html, *, *::before, *::after {
     background-position: center 65%;
 }
 
+.navbar-toggler:focus {
+   outline: none;
+    -webkit-appearance: none;
+}
+
 section {
     height: 100vh;
     min-height: 600px;
@@ -49,13 +54,16 @@ section {
     position: relative;
 }
 
+section h2 {
+    font-size: 40px;
+}
+
 .titleSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
     position: relative;
-    /*height: calc(100vh - 56px);*/
 }
 
 .titleSection h1 {
@@ -81,15 +89,14 @@ section {
     opacity: 0.6;
 }
 
-.hero, .intro, .detail {
-    background: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
+.main {
+    background: #eeeeee;
 }
 
-.hero {
-    /*margin-top: 56px;*/
-    /*height: calc(100vh - 56px);*/
+.hero, .intro, .detail {
+    /*background: #fdfdfd;*/
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .heroText, .introText, .detailText {
@@ -134,12 +141,10 @@ section {
 
 .introTagline h1 {
     display: inline-block;
-    /*padding-bottom: 10px;*/
     text-align: center;
     font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
     letter-spacing: 0.035em;
-    /*border-bottom: 1px solid #aaaaaa;*/
 }
 
 .introTagline h1 span {
@@ -179,18 +184,16 @@ section {
     width: 100%;
     /*min-height: 300px;*/
     min-height: 100vh;
-    /*background: linear-gradient(to bottom, #ffffff, #bebebe);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     padding: 140px 40px;
     height: auto;
 }
 
 .supportingTitle {
     text-align: center;
-    /*height: 40%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,14 +261,13 @@ section {
 
 .vidCaption {
     text-align: center;
+    width: 50%;
 }
 
 .supporting p {
     text-align: center;
     font-size: 20px;
-    /*height: 60%;*/
     margin-bottom: 20px;
-    /*margin-top: 40px;*/
     max-width: 680px;
     margin-left: auto;
     margin-right: auto;
@@ -337,6 +339,10 @@ pre span::before {
 }
 
 @media (min-width: 768px) {
+    section h2 {
+        font-size: 50px;
+    }
+
     .show-for-medium {
         display: initial;
     }
