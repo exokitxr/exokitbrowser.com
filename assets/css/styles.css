@@ -362,26 +362,39 @@ pre {
 .getStarted, .getStarted:hover, .getStarted:focus {
     color: white;
     background-color: #DD6F84;
-    padding: 10px 15px;
+    padding: 8px 13px;
     width: 200px;
     text-align: center;
     display: block;
-    margin: 50px auto 0;
     font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 0.03em;
     font-size: 20px;
     text-decoration: none;
-    border-radius: 2px;
 }
 
 .getStarted {
-    transition: all 0.2s;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+
+.getStarted:first-of-type {
+    margin-right: 20px;
+    padding-top: 10px;
 }
 
 .getStarted:hover {
     filter: brightness(110%);
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+}
+
+.getStarted.invert {
+    background-color: transparent;
+    color: #DD6F84;
+    border: 2px solid #DD6F84;
+}
+
+.startLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 footer {
@@ -389,57 +402,17 @@ footer {
     color: #888888;
 }
 
-.aboutHeader {
-    padding: 80px 0;
-    text-align: center;
+p.contribute {
+    font-size: 16px;
 }
 
-.no-stick {
-    position: initial;
+p.contribute a:hover, p.contribute a:focus {
+    color: #FF8960;
 }
 
-.about {
-    padding-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
+#install .startLinks {
+    margin-top: 60px;
 }
-
-.topics {
-    width: 100%;
-}
-
-.content {
-    width: 100%;
-}
-
-.about .topicsList {
-    list-style: none;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
-
-.about .topicsList li {
-    list-style: none;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    color: rgba(0,0,0,0.9);
-}
-
-.about .topicsList li a {
-    color: #8e8e8e;
-}
-
-/*@media (min-width: 600px) {*/
-    /*.slack-badge-bar {*/
-        /*right: 100px;*/
-    /*}*/
-/*}*/
-
-/*@media (min-width: 640px) {*/
-    /*.slack-badge-bar {*/
-        /*right: 120px;*/
-    /*}*/
-/*}*/
 
 @media (min-width: 410px) {
     .titleSection {
