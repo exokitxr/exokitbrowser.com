@@ -299,6 +299,31 @@ pre span::before {
     margin: 60px auto;
 }
 
+.getStarted, .getStarted:hover, .getStarted:focus {
+    color: white;
+    background-color: #DD6F84;
+    padding: 10px 15px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 50px auto 0;
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.getStarted {
+    transition: all 0.2s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.getStarted:hover {
+    filter: brightness(110%);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+}
+
 @media (min-width: 600px) {
     .slack-badge-bar {
         right: 100px;
