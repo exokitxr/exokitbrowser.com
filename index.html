@@ -1,390 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Exokit</title>
-  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
-  
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <div class="main-wrapper">
-    <header class="header header--bg gutters-15">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Exokit</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Exokit">
+    <meta name="application-name" content="Exokit">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+    <link href="css/revamp_4_13.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <nav class="navbar">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
-            <a class="navbar-brand" href="#">EXOKIT</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="./docs">DOCS</a></li>
-              <li><a href="https://github.com/webmixedreality/exokit" target="_blank">GITHUB</a></li>
-              <li><a href="https://exoslack.now.sh" target="_blank">JOIN THE SLACK</a></li>
-              <li><a href="#about-exokit" id="about-link">ABOUT</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="header__content text-center">
-          <h1 class="header__content__title">Exokit is a browser from the future.</h1>
-          <p class="header__content__paragraph">
-            It runs virtual worlds and works everywhere your web code does.
-          </p>
-          <pre class="code">
-<span id="code-install">npm install -g exokit</span>
-<span id="code-run">exokit <a href="http://zeovr.io">http://zeovr.io</a></span></pre>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
+        <a class="slack-badge-bar nav-link js-scroll-trigger hide-for-lg" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#install">Install</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./docs" target="_blank">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit">Github</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer">Twitch</a>
+            </li>
+            <li class="nav-item">
+              <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <video autoplay muted playsinline loop id="sun-earth">
-        <source src="https://i.imgur.com/Yt8HIEw.mp4" type="video/mp4">
-      </video>
-    </header>
-    
-    <section class="service" id="about-exokit">
-      <div class="container">
-        <div class="page-section text-center">
-          <div class="gutters-15">
-            <h2 class="page-section__title">WHAT'S IT DO?</h2>
-            <p class="page-section__paragraph">Exokit is a fast, full HTML5 web browser, written as a Node.js module.
-              <br /><br />
-              It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.
-              <br/><br/>
-              Actually, Exokit can do everything a browser can do -- except <em>render</em> HTML (mostly).
-            </p>
-            <h2 class="page-section__title">WHAT CAN I BUILD?</h2>
-            <p class="page-section__paragraph">Exokit can't render HTML, but it can draw Canvas and WebGL -- natively, and fast.
-              <br /><br />
-              <strong>This means you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</strong>
-              <br/><br/>
-              Under the hood, everything is plain OpenGL, so it plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
-            </p>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons xo"></i>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons leaper"></i>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons win"></i>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons mac"></i>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons linux"></i>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail platform">
-                <i class="material-icons droid"></i>
-              </div>
-            </div>
-          </div>
-          <section class="contact contact--bg">
-            <div class="container">
-              <div class="page-section text-center">
-                <h2 class="page-section__title--white">BUT CAN WE SAY SOMETHING IN LIST FORMAT?</h2>
-                <p class="page-section__paragraph--white--bold">
-                  You bet. Some examples of what Exokit can do:
-                </p>
-              </div>
-            </div>
-          </section>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">open_in_browser</i>
-                <h4 class="service__title">Load any http(s) site</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">developer_mode</i>
-                <h4 class="service__title">Parse a programmatic DOM</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">code</i>
-                <h4 class="service__title">Run any &lt;script&gt;</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">image</i>
-                <h4 class="service__title"">Load any &lt;image&gt;, &lt;video&gt;, &lt;audio&gt;</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">work</i>
-                <h4 class="service__title">Register and run Web Workers</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">brush</i>
-                <h4 class="service__title">Render Canvas2D</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">format_paint</i>
-                <h4 class="service__title">Render WebGL</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">3d_rotation</i>
-                <h4 class="service__title">Render WebVR</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">gamepad</i>
-                <h4 class="service__title">Handle gamepad input</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">devices</i>
-                <h4 class="service__title">Embed anywhere with node</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">android</i>
-                <h4 class="service__title">Run on Android/iOS</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">check</i>
-                <h4 class="service__title">Run tests</h4>
-              </div>
-            </div>
-          </div>
-          <section class="contact contact--bg">
-            <div class="container">
-              <div class="page-section text-center">
-                <h2 class="page-section__title--white">AND API SUPPORT, ALSO AS A LIST?</h2>
-                <p class="page-section__paragraph--white--bold">
-                  We're on it:
-                </p>
-              </div>
-            </div>
-          </section>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">http</i>
-                <h4 class="service__title">HTTP(S)</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">developer_mode</i>
-                <h4 class="service__title">HTML5 Parsing</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">code</i>
-                <h4 class="service__title">ES7 (Whatever Node you use)</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">insert_drive_file</i>
-                <h4 class="service__title"">DOM</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">brush</i>
-                <h4 class="service__title">CanvasRenderingContext2D</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">image</i>
-                <h4 class="service__title">Image tag</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">audiotrack</i>
-                <h4 class="service__title">Audio tag</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">videocam</i>
-                <h4 class="service__title">Video tag</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">keyboard</i>
-                <h4 class="service__title">Keyboard events</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">mouse</i>
-                <h4 class="service__title">Mouse events</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">format_paint</i>
-                <h4 class="service__title">WebGL</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">3d_rotation</i>
-                <h4 class="service__title">WebVR</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">gamepad</i>
-                <h4 class="service__title">Gamepad API</h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail nope">
-                <i class="material-icons">close</i>
-                <h4 class="service__title"><strong>No HTML layouts</strong></h4>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail nope">
-                <i class="material-icons">close</i>
-                <h4 class="service__title"><strong>No CSS Rendering</strong></h4>
-              </div>
-            </div>
-          </div>
+    </nav>
+
+    <section class="titleSection">
+      <h1><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen web browser.</span></h1>
+      <div class="more"></div>
+    </section>
+
+    <section class="hero main">
+      <div class="heroText">
+        <div class="heroTagline">
+          <h1>Build and experience AR websites today</h1>
+        </div>
+      </div>
+      <div class="heroImage"></div>
+    </section>
+
+    <section class="supporting" id="mlSection">
+      <div class="supportingTitle"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
+      <div class="videoWrapper">
+        <video id="ml" playsinline muted>
+          <source src="./video/vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="videoOverlay hide" id="mlOverlay"></div>
+      </div>
+      <p class="supportingDetails">
+        Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
+      </p>
+      <p class="">It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</p>
+    </section>
+
+    <section class="intro main">
+      <div class="introImage"></div>
+      <div class="introText">
+        <div class="introTagline">
+          <h1>Fast on E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit</h1>
         </div>
       </div>
     </section>
-    
-    <section class="contact contact--bg">
-      <div class="container">
-        <div class="page-section text-center">
-          <h2 class="page-section__title--white">Stop waiting. Start building.</h2>
-          <a class="button button--hover docs" href="./docs/index.html">THE DOCS</a>
+
+    <section class="supporting introSupporting">
+      <div class="supportingTitle">
+        <h2>2x the speed of Chrome</h2>
+      </div>
+      <div class="multividWrapper">
+        <div class="videoWrapper">
+          <video id="fps1" playsinline>
+            <source src="./video/vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay hide"></div>
         </div>
+        <div class="videoWrapper">
+          <video id="fps2" playsinline>
+            <source src="./video/vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay hide"></div>
+        </div>
+      </div>
+      <div class="vidCaptions">
+        <div class="vidCaption"><p>Chrome 65</p></div>
+        <div class="vidCaption"><p>Exokit</p></div>
       </div>
     </section>
-    
-    <section class="about">
-      <div class="container">
-        <div class="page-section">
-          <div class="text-center">
-            <h2 class="page-section__title">WE <i class="material-icons">favorite</i> NEW FRIENDS</h2>
-            <p class="page-section__paragraph">Join the Slack</p>
-            <p class="page-section__paragraph">Contribute</p>
-          </div>
+
+    <section class="detail main">
+      <div class="detailText">
+        <div class="detailTagline">
+          <h1>JS + HTML</h1>
         </div>
       </div>
-      </section>
+      <div class="detailImage"></div>
+    </section>
 
-      <footer class="footer footer--bg">
-        <div class="container">
-          <div class="page-section">
-            <div class="row gutters-100">
-              <div class="col-md-4 col-lg-3">
-                <div class="footer__first">
-                  <h2 class="footer__title">EXOKIT</h2>
-                  <ul class="footer-first__social-icons">
-                    <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
-                  </ul>
-                </div>
-                <div class="attributions">
-                  "<a rel="nofollow" class="external text" href="https://poly.google.com/view/dRbgMKxXbv6" target="_blank">The sun and earth</a>" by <a rel="nofollow" target="_blank" class="external text" href="https://poly.google.com/user/1hcF2rPTi6a">Agent55534</a> is licensed under <a rel="nofollow" target="_blank" class="external text" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
-                  <br />
-                  "<a rel="nofollow" class="external text" target="_blank" href="https://poly.google.com/view/2jArjWIaygh">Night garden</a>" by <a rel="nofollow" class="external text" target="_blank" href="https://poly.google.com/user/bp-9BfaV7x8">papilioblue 1</a> is licensed under <a rel="nofollow" class="external text" target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-2">
-                <div class="footer__second">
-                  <h2 class="footer__title">QUICK LINK</h2>
-                  <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">FAQ</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <hr class="footer__horizontal-bar">
-            <p class="footer__bottom-paragraph">&copy; Copyright 2018 <a href="#" style="color: #00aafe;font-weight:bold;">Avaer</a>. All Rights Reserved</p>
-          </div>
-        </div>
-      </footer>
-  </div>
-    
-    
-  
+    <section class="supporting detailSupporting" id="install">
+      <div class="supportingTitle"><h2>Install with npm. Build AR with JS.</h2></div>
+      <pre id="installCode"><span></span>npm install -g exokit</pre>
+      <p class="margin60">With Exokit, you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</p>
+      <a class="getStarted" href="./docs" target="_blank">Get Started</a>
+    </section>
 
-  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <footer>
+      &#169; Copyright 2018 WebMR
+    </footer>
 
-  <script>
-    $(document).ready(function() {
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      var $videoSrc = $("#video").attr("src");
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-      $('#myModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc); 
-      });
-    });
-  </script>
-<script src="./assets/js/script.js"></script>
-</body>
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/ui_4_13.js"></script>
+  </body>
+
 </html>
-
-
-
-
-

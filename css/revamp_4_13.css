@@ -1,0 +1,476 @@
+@font-face {
+    font-family:'SF Pro Display';
+    src: url('../fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+    font-family:'SF Pro Display Light';
+    src: url('../fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+    font-family:'SF Pro Display Thin';
+    src: url('../fonts/SF-Pro-Display-Thin.otf');
+}
+
+html, *, *::before, *::after {
+    font-family: 'SF Pro Display', 'Helvetica', 'Arial', sans-serif;
+}
+
+.show-for-medium {
+    display: none;
+}
+
+#mainNav .navbar-brand {
+    color: transparent;
+    background-image: url('../img/exokit.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active {
+    color: transparent;
+}
+
+.slack-badge-bar {
+    color: transparent !important;
+    background-image: url('https://exoslack.now.sh/badge.svg');
+    background-size: 87px 20px;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+}
+
+.navbar-toggler:focus {
+   outline: none;
+    -webkit-appearance: none;
+}
+
+section {
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    padding: 0 0 0 0;
+    position: relative;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.titleSection h1 {
+    text-align: center;
+}
+
+.titleSection h1 span {
+    font-weight: 400;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.more {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/more.png');
+    background-position: center center;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+.main {
+    background: #eeeeee;
+}
+
+.hero, .intro, .detail {
+    /*background: #fdfdfd;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heroText, .introText, .detailText {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroText, .detailText {
+    padding: 0 60px;
+}
+
+.heroTagline, .introTagline, .detailTagline {
+    text-align: center;
+}
+
+.introTagline span {
+    font-weight: 300 !important;
+}
+
+.xo-pink, a.xo-pink, a.xo-pink:hover, a.xo-pink:focus {
+    color: #DD6F84;
+}
+
+.xo-orange {
+    color: #FF8960;
+}
+
+.xo-orange-bg {
+    background-color: #FF8960;
+}
+
+.xo-orange-dark-bg {
+    background-color: #E2603D;
+}
+
+.xo-orange-gradient {
+    background: linear-gradient(to bottom, #ffffff, #DD6F84);
+}
+
+.introTagline h1 {
+    display: inline-block;
+    text-align: center;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.035em;
+}
+
+.introTagline h1 span {
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+}
+
+.heroImage, .introImage, .detailImage {
+    width: 100%;
+    height: 60%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.heroImage {
+    background-image: url('../img/ml-lightwear.jpg');
+}
+
+.introImage {
+    background-image: url('../img/zeo.png');
+}
+
+.detailImage {
+    background-image: url('../img/ml-reveal.jpg');
+}
+
+.opacityMask {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+.supporting {
+    width: 100%;
+    /*min-height: 300px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: #eeeeee;*/
+    padding: 140px 40px;
+    height: auto;
+}
+
+.supportingTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 60px;
+    width: 80vw;
+    max-width: 640px;
+    height: 45vw;
+    max-height: 360px;
+}
+
+.videoOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('../img/play@2x.png');
+    background-size: auto 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.videoOverlay.hide, .videoOverlay.hide:hover {
+    background-image: none;
+    background-color: transparent;
+}
+
+.videoOverlay:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoWrapper video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.multividWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.multividWrapper .videoWrapper {
+    max-width: 40vw;
+    max-height: 22vw;
+}
+
+.vidCaptions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vidCaption {
+    text-align: center;
+    width: 50%;
+}
+
+.supporting p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+}
+
+.supporting p:last-of-type {
+    margin-bottom: 0;
+}
+
+pre {
+    background-color: #eeeeee;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 2px;
+}
+
+.wrapup {
+    background: #8e8e8e;
+}
+
+.margin60 {
+    margin: 60px auto;
+}
+
+.getStarted, .getStarted:hover, .getStarted:focus {
+    color: white;
+    background-color: #DD6F84;
+    padding: 10px 15px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 50px auto 0;
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.getStarted {
+    transition: all 0.2s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.getStarted:hover {
+    filter: brightness(110%);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+}
+
+footer {
+    background-color: #eeeeee;
+    color: #888888;
+}
+
+.aboutHeader {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.no-stick {
+    position: initial;
+}
+
+.about {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topics {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.about .topicsList {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.about .topicsList li {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color: rgba(0,0,0,0.9);
+}
+
+.about .topicsList li a {
+    color: #8e8e8e;
+}
+
+@media (min-width: 600px) {
+    .slack-badge-bar {
+        right: 100px;
+    }
+}
+
+@media (min-width: 640px) {
+    .slack-badge-bar {
+        right: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    section h2 {
+        font-size: 50px;
+    }
+
+    .show-for-medium {
+        display: initial;
+    }
+
+    .hero, .intro, .detail {
+        flex-wrap: nowrap;
+    }
+
+    .heroText, .introText, .detailText {
+        width: 40%;
+        height: 100%;
+    }
+
+    .heroImage, .introImage, .detailImage {
+        width: 60%;
+        height: 100%;
+    }
+
+    .about {
+        flex-wrap: nowrap;
+        border-top: 1px solid #e5e8ed;
+    }
+
+    .topics {
+        width: 260px;
+        padding: 0 0 0 60px;
+    }
+
+    .content {
+        width: calc(100% - 260px);
+    }
+}
+
+@media (min-width: 992px) {
+    .slack-badge {
+        background-image: url('https://exoslack.now.sh/badge.svg');
+        background-size: 87px 20px;
+        background-repeat: no-repeat;
+        background-position: 20% center;
+    }
+
+    #mainNav {
+        background-color: #ffffff;
+    }
+
+    #mainNav .navbar-nav > li > a.slack-badge,
+    #mainNav .navbar-nav > li > a.slack-badge:focus,
+    #mainNav .navbar-nav > li > a.slack-badge:hover,
+    #mainNav .navbar-nav > li > a.slack-badge:active {
+        color: transparent;
+    }
+
+    #mainNav .navbar-nav > li > a:hover,
+    #mainNav .navbar-nav > li > a:focus:hover {
+        color: #DD6F84;
+    }
+
+    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a,
+    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+        color: #000000;
+    }
+
+    .hide-for-lg {
+        display: none;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: transparent;
+    }
+}
+
+@media (min-width: 1080px) {
+}
+
+@-webkit-keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
+    }
+}
+
+@keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
+    }
+}
