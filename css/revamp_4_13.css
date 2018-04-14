@@ -280,11 +280,12 @@ section h2 {
 }
 
 pre {
-    background-color: #dedede;
+    background-color: #eeeeee;
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
     padding: 10px 20px;
+    border-radius: 2px;
 }
 
 pre span::before {
