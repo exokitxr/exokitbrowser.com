@@ -23,6 +23,9 @@ html, *, *::before, *::after {
 
 #mainNav .navbar-brand {
     color: transparent;
+    width: 54px;
+    height: 40px;
+    margin: 0 auto;
     background-image: url('../images/exokit.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -34,17 +37,68 @@ html, *, *::before, *::after {
     color: transparent;
 }
 
-.slack-badge-bar {
+.slack-badge {
     color: transparent !important;
     background-image: url('https://exoslack.now.sh/badge.svg');
     background-size: 87px 20px;
     background-repeat: no-repeat;
     background-position: center 65%;
+    width: 87px;
+    height: 23px;
+}
+
+a.slack-badge,
+a.slack-badge:focus,
+a.slack-badge:hover,
+a.slack-badge:active {
+    color: transparent;
 }
 
 .navbar-toggler:focus {
    outline: none;
     -webkit-appearance: none;
+}
+
+.siteNav {
+    padding-top: 10px;
+}
+
+.siteNav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navList {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navList li {
+    text-align: center;
+}
+
+.nav-link:not(.badgeItem) {
+    padding: 0 0 0 0;
+}
+
+.navItem {
+    padding: 8px;
+}
+
+.navList li a:not(.slack-badge) {
+    color: black;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    margin-top: -2px;
 }
 
 section {
@@ -65,6 +119,7 @@ section h2 {
     justify-content: center;
     padding: 0 30px;
     position: relative;
+    height: calc(100vh - 130px);
 }
 
 .titleSection h1 {
@@ -106,6 +161,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 40px;
 }
 
 .heroText, .detailText {
@@ -255,6 +311,10 @@ section h2 {
     max-height: 22vw;
 }
 
+.multividWrapper .videoWrapper:first-of-type {
+    margin-right: 8px;
+}
+
 .vidCaptions {
     display: flex;
     justify-content: space-around;
@@ -274,6 +334,8 @@ section h2 {
     margin-right: auto;
     letter-spacing: 0.03em;
     line-height: 1.8;
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
 }
 
 .supporting p:last-of-type {
@@ -367,15 +429,21 @@ footer {
     color: #8e8e8e;
 }
 
-@media (min-width: 600px) {
-    .slack-badge-bar {
-        right: 100px;
-    }
-}
+/*@media (min-width: 600px) {*/
+    /*.slack-badge-bar {*/
+        /*right: 100px;*/
+    /*}*/
+/*}*/
 
-@media (min-width: 640px) {
-    .slack-badge-bar {
-        right: 120px;
+/*@media (min-width: 640px) {*/
+    /*.slack-badge-bar {*/
+        /*right: 120px;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 410px) {
+    .titleSection {
+        height: calc(100vh - 91px);
     }
 }
 
@@ -427,13 +495,6 @@ footer {
 
     #mainNav {
         background-color: #ffffff;
-    }
-
-    #mainNav .navbar-nav > li > a.slack-badge,
-    #mainNav .navbar-nav > li > a.slack-badge:focus,
-    #mainNav .navbar-nav > li > a.slack-badge:hover,
-    #mainNav .navbar-nav > li > a.slack-badge:active {
-        color: transparent;
     }
 
     #mainNav .navbar-nav > li > a:hover,

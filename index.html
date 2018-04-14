@@ -42,35 +42,30 @@
 
   <body id="page-top" itemscope itemtype="http://schema.org/WebPage">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="siteNav" id="mainNav" itemscope itemtype="http://schema.org/WPHeader">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
-        <a class="slack-badge-bar nav-link js-scroll-trigger hide-for-lg" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto" role="navigation">
-            <li class="nav-item" itemprop="name">
+        <div class="navOptions" id="navbarResponsive">
+          <ul class="navList" role="navigation">
+            <li class="navItem" itemprop="name">
               <a class="nav-link js-scroll-trigger" href="#install" itemprop="url">Install</a>
             </li>
-            <li class="nav-item" itemprop="name">
+            <li class="navItem" itemprop="name">
               <a class="nav-link" href="//docs.webmr.io" target="_blank" itemprop="url">Docs</a>
             </li>
-            <li class="nav-item" itemprop="name">
+            <li class="navItem" itemprop="name">
               <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit" itemprop="url">Github</a>
             </li>
-            <li class="nav-item" itemprop="name">
+            <li class="navItem" itemprop="name">
               <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer" itemprop="url">Twitch</a>
             </li>
-            <li class="nav-item" itemprop="name">
+            <li class="navItem badgeItem" itemprop="name">
               <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank" itemprop="url">Join the Slack</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
 
     <section class="titleSection">
       <h1 itemprop="description"><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span></h1>
@@ -146,7 +141,7 @@
     </section>
 
     <section class="supporting detailSupporting" id="install">
-      <div class="supportingTitle"><h2>Install with npm. Build AR with JS.</h2></div>
+      <div class="supportingTitle"><h2>Install with npm.<br/>Build mixed reality websites with JS.</h2></div>
       <pre id="installCode"><span></span>npm install -g exokit</pre>
       <p class="margin60">With Exokit, you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</p>
       <a class="getStarted" href="//docs.webmr.io" target="_blank">Get Started</a>
