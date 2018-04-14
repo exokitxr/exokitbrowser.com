@@ -150,6 +150,24 @@ section h2 {
     letter-spacing: 0.03em;
 }
 
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#particles-js canvas {
+    height: 100%;
+    width: 100%;
+}
+
+#titleStartLinks a {
+    z-index: 999;
+}
+
 .more {
     height: 60px;
     position: absolute;
@@ -161,6 +179,7 @@ section h2 {
     background-size: auto 20px;
     background-repeat: no-repeat;
     opacity: 0.6;
+    z-index: 1000;
 }
 
 .main {

@@ -91,8 +91,9 @@
     </div>
 
     <section class="titleSection">
+      <div id="particles-js"></div>
       <h1 itemprop="description"><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span></h1>
-      <div class="startLinks">
+      <div class="startLinks" id="titleStartLinks">
         <a class="getStarted" href="//docs.webmr.io" target="_blank">Get Started</a>
         <a class="getStarted invert" target="_blank" href="https://github.com/webmixedreality/exokit">GitHub</a>
       </div>
@@ -114,8 +115,8 @@
           <div class="platformsInner">
             <div class="platform xo"></div>
             <div class="platform magicLeap"></div>
-            <div class="platform mac"></div>
             <div class="platform windows"></div>
+            <div class="platform mac"></div>
             <div class="platform linux"></div>
             <div class="platform android"></div>
           </div>
@@ -152,14 +153,14 @@
             <source src="/assets/video/zeochrome.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="videoOverlay hide" id="chromeOverlay"></div>
+          <div class="videoOverlay" id="chromeOverlay"></div>
         </div>
         <div class="videoWrapper">
           <video id="fpsExo" playsinline muted loop>
             <source src="/assets/video/zeochrome.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="videoOverlay hide" id="exoOverlay"></div>
+          <div class="videoOverlay" id="exoOverlay"></div>
         </div>
       </div>
       <div class="vidCaptions">
@@ -241,7 +242,7 @@
             }
           },
           "size": {
-            "value": 8,
+            "value": 6,
             "random": true,
             "anim": {
               "enable": false,
@@ -293,10 +294,10 @@
               }
             },
             "bubble": {
-              "distance": 60,
+              "distance": 80,
               "size": 6,
               "duration": 0.3,
-              "opacity": 1,
+              "opacity": 0.8,
               "speed": 3
             },
             "repulse": {
