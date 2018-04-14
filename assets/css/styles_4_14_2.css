@@ -289,16 +289,16 @@ section h2 {
     justify-content: center;
     margin-bottom: 60px;
     position: relative;
-    height: 120px;
+    /*height: 120px;*/
 }
 
-.platforms canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+/*.platforms canvas {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+/*}*/
 
 .platform {
     width: 40px;
@@ -515,7 +515,7 @@ p.contribute a:hover, p.contribute a:focus {
         padding: 0 60px;
         width: 100%;
         max-width: 960px;
-        height: 220px;
+        /*height: 220px;*/
     }
 }
 
@@ -543,13 +543,13 @@ p.contribute a:hover, p.contribute a:focus {
     }
 
     .supportingTitle {
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
 
     .platforms {
         padding: 0 100px;
         max-width: 940px;
-        margin: 0 auto 20px;
+        margin: 0 auto 80px;
     }
 
     .platformsInner {
