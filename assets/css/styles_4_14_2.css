@@ -187,7 +187,6 @@ section h2 {
 }
 
 .hero, .intro, .detail {
-    /*background: #fdfdfd;*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -276,12 +275,10 @@ section h2 {
 
 .supporting {
     width: 100%;
-    /*min-height: 300px;*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*background-color: #eeeeee;*/
     padding: 140px 40px;
     height: auto;
 }
@@ -308,16 +305,7 @@ section h2 {
     justify-content: center;
     margin-bottom: 60px;
     position: relative;
-    /*height: 120px;*/
 }
-
-/*.platforms canvas {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-/*}*/
 
 .platform {
     width: 40px;
@@ -340,7 +328,6 @@ section h2 {
 
 .platform.magicLeap {
     background-image: url('../images/leaper.svg');
-    /*animation-delay: -0.6s;*/
 }
 
 .platform.mac {
