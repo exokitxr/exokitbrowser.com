@@ -48,8 +48,18 @@
       const id = mixpanel.get_distinct_id();
       mixpanel.identify(id);
       mixpanel.people.set_once('First visited', now.toLocaleDateString().concat(' ').concat(now.toLocaleTimeString()));
+      mixpanel.track_links('.nav-link', 'Clicked nav link');
     },
   });</script><!-- end Mixpanel -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117505101-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117505101-1');
+    </script>
   </head>
 
   <body id="page-top" itemscope itemtype="http://schema.org/WebPage">
