@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Exokit</title>
+
+    <meta property="og:title" content="Exokit"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sheminusminus.github.io/webmr-site/"/>
+    <meta property="og:image" content="https://sheminusminus.github.io/webmr-site/img/xo@2x.png"/>
+    <meta property="og:description" content="Exokit is a brand new, fast, post-screen web browser."/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -35,10 +39,10 @@
     <link href="css/revamp_4_13.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top" itemscope itemtype="http://schema.org/WebPage">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" itemscope itemtype="http://schema.org/WPHeader">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
         <a class="slack-badge-bar nav-link js-scroll-trigger hide-for-lg" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
@@ -46,21 +50,21 @@
           Menu
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" role="navigation">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#install">Install</a>
+              <a class="nav-link js-scroll-trigger" href="#install" itemprop="url">Install</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="//docs.webmr.io" target="_blank">Docs</a>
+              <a class="nav-link" href="//docs.webmr.io" target="_blank" itemprop="url">Docs</a>
             </li>
             <li class="nav-item">
-              <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit">Github</a>
+              <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit" itemprop="url">Github</a>
             </li>
             <li class="nav-item">
-              <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer">Twitch</a>
+              <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer" itemprop="url">Twitch</a>
             </li>
             <li class="nav-item">
-              <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
+              <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank" itemprop="url">Join the Slack</a>
             </li>
           </ul>
         </div>
@@ -68,7 +72,7 @@
     </nav>
 
     <section class="titleSection">
-      <h1><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen web browser.</span></h1>
+      <h1 itemprop="description"><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen web browser.</span></h1>
       <div class="more"></div>
     </section>
 
