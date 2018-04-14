@@ -288,12 +288,6 @@ pre {
     border-radius: 2px;
 }
 
-/*pre span::before {*/
-    /*display: inline-block;*/
-    /*content: '$';*/
-    /*margin-right: 10px;*/
-/*}*/
-
 .wrapup {
     background: #8e8e8e;
 }
@@ -332,6 +326,46 @@ footer {
     color: #888888;
 }
 
+.aboutHeader {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.no-stick {
+    position: initial;
+}
+
+.about {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topics {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.about .topicsList {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.about .topicsList li {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color: rgba(0,0,0,0.9);
+}
+
+.about .topicsList li a {
+    color: #8e8e8e;
+}
+
 @media (min-width: 600px) {
     .slack-badge-bar {
         right: 100px;
@@ -365,6 +399,20 @@ footer {
     .heroImage, .introImage, .detailImage {
         width: 60%;
         height: 100%;
+    }
+
+    .about {
+        flex-wrap: nowrap;
+        border-top: 1px solid #e5e8ed;
+    }
+
+    .topics {
+        width: 260px;
+        padding: 0 0 0 60px;
+    }
+
+    .content {
+        width: calc(100% - 260px);
     }
 }
 
