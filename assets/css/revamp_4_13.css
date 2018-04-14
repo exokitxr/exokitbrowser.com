@@ -23,13 +23,14 @@ html, *, *::before, *::after {
 
 #mainNav .navbar-brand {
     color: transparent;
-    background-image: url('../img/exokit.png');
+    background-image: url('../images/exokit.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active {
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active,
+#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: transparent;
 }
 
@@ -82,7 +83,7 @@ section h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('../img/more.png');
+    background-image: url('../images/more.png');
     background-position: center center;
     background-size: auto 20px;
     background-repeat: no-repeat;
@@ -160,15 +161,15 @@ section h2 {
 }
 
 .heroImage {
-    background-image: url('../img/ml-lightwear.jpg');
+    background-image: url('../images/ml-lightwear.jpg');
 }
 
 .introImage {
-    background-image: url('../img/zeo.png');
+    background-image: url('../images/zeo.png');
 }
 
 .detailImage {
-    background-image: url('../img/ml-reveal.jpg');
+    background-image: url('../images/ml-reveal.jpg');
 }
 
 .opacityMask {
@@ -218,7 +219,7 @@ section h2 {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.2);
-    background-image: url('../img/play@2x.png');
+    background-image: url('../images/play@2x.png');
     background-size: auto 40px;
     background-repeat: no-repeat;
     background-position: center center;
