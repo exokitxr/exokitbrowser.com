@@ -284,15 +284,15 @@ pre {
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 2px;
 }
 
-pre span::before {
-    display: inline-block;
-    content: '$';
-    margin-right: 10px;
-}
+/*pre span::before {*/
+    /*display: inline-block;*/
+    /*content: '$';*/
+    /*margin-right: 10px;*/
+/*}*/
 
 .wrapup {
     background: #8e8e8e;
