@@ -23,13 +23,31 @@ html, *, *::before, *::after {
 
 #mainNav .navbar-brand {
     color: transparent;
-    width: 54px;
-    height: 40px;
+    width: 108px;
+    height: 59px;
     margin: 0 auto;
     background-image: url('../images/exokit@2x.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active,
+#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover,
+#mainNav span.xo-pink, #mainNav span.xo-orange,
+#mainNav.navbar-shrink span.xo-pink, #mainNav.navbar-shrink span.xo-orange {
+    color: transparent;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (   min--moz-device-pixel-ratio: 1.25),
+only screen and (     -o-min-device-pixel-ratio: 5/4),
+only screen and (        min-device-pixel-ratio: 1.25) {
+    #mainNav .navbar-brand {
+        width: 54px;
+        height: 40px;
+    }
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active,
