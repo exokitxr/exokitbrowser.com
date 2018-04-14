@@ -110,13 +110,23 @@
 
     <section class="supporting" id="mlSection">
       <div class="supportingTitle"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
-      <div class="videoWrapper">
-        <video id="ml" playsinline muted>
-          <source src="/assets/video/vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="videoOverlay hide" id="mlOverlay"></div>
+        <div class="platforms" id="particles-js">
+          <div class="platformsInner">
+            <div class="platform xo"></div>
+            <div class="platform magicLeap"></div>
+            <div class="platform mac"></div>
+            <div class="platform windows"></div>
+            <div class="platform linux"></div>
+            <div class="platform android"></div>
+          </div>
       </div>
+      <!--<div class="videoWrapper">-->
+        <!--<video id="ml" playsinline muted>-->
+          <!--<source src="https://media.giphy.com/media/8rGLhGfXTARuU/giphy.mp4" type="video/mp4">-->
+          <!--Your browser does not support the video tag.-->
+        <!--</video>-->
+        <!--<div class="videoOverlay hide" id="mlOverlay"></div>-->
+      <!--</div>-->
       <p class="supportingDetails">
         Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
       </p>
@@ -132,24 +142,24 @@
       </div>
     </section>
 
-    <section class="supporting introSupporting">
+    <section class="supporting introSupporting" id="fpsSection">
       <div class="supportingTitle">
         <h2>2x faster than Chrome</h2>
       </div>
       <div class="multividWrapper">
         <div class="videoWrapper">
-          <video id="fps1" playsinline>
-            <source src="/assets/video/vid.mp4" type="video/mp4">
+          <video id="fpsChrome" playsinline muted loop>
+            <source src="/assets/video/zeochrome.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="videoOverlay hide"></div>
+          <div class="videoOverlay hide" id="chromeOverlay"></div>
         </div>
         <div class="videoWrapper">
-          <video id="fps2" playsinline>
-            <source src="/assets/video/vid.mp4" type="video/mp4">
+          <video id="fpsExo" playsinline muted loop>
+            <source src="/assets/video/zeochrome.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="videoOverlay hide"></div>
+          <div class="videoOverlay hide" id="exoOverlay"></div>
         </div>
       </div>
       <div class="vidCaptions">
@@ -191,6 +201,120 @@
     <!-- Custom scripts for this template -->
     <script src="/assets/js/new-age.min.js"></script>
     <script src="/assets/js/ui_4_13.js"></script>
+    <script src="/assets/vendor/particles.min.js"></script>
+    <script>
+      const particlesConfig = {
+        "particles": {
+          "number": {
+            "value": 200,
+            "density": {
+              "enable": true,
+              "value_area": 300
+            }
+          },
+          "color": {
+            "value": "#dd6f84"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 8,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 496,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "bottom",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "onclick": {
+              "enable": false,
+              "mode": "repulse"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 0.5
+              }
+            },
+            "bubble": {
+              "distance": 60,
+              "size": 6,
+              "duration": 0.3,
+              "opacity": 1,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 63.73689410115041,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": false
+      };
+      particlesJS('particles-js', particlesConfig);
+    </script>
   </body>
 
 </html>
