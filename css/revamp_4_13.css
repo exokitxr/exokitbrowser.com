@@ -112,7 +112,7 @@ section {
     font-weight: 300 !important;
 }
 
-.xo-pink {
+.xo-pink, a.xo-pink, a.xo-pink:hover, a.xo-pink:focus {
     color: #DD6F84;
 }
 
