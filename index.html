@@ -49,6 +49,7 @@
       mixpanel.identify(id);
       mixpanel.people.set_once('First visited', now.toLocaleDateString().concat(' ').concat(now.toLocaleTimeString()));
       mixpanel.track_links('.nav-link', 'Clicked nav link');
+      mixpanel.track('Page View', { pageName: 'Main Landing', pageUrl: 'exokitbrowser.com' });
     },
   });</script><!-- end Mixpanel -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
