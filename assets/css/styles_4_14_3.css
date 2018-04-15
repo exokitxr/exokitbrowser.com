@@ -129,6 +129,9 @@ section {
 
 section h2 {
     font-size: 40px;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .titleSection {
@@ -450,25 +453,24 @@ section h2 {
 }
 
 .triptych div {
-    /*box-shadow: 0 2px 4px rgba(3,27,78,.06);*/
-    /*border: 1px solid #e5e8ed;*/
-    /*border-radius: 5px;*/
     padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
-    letter-spacing: 0.03em;
-    line-height: 1.8;
-    /*transition: box-shadow .25s linear;*/
 }
 
 .triptych div h4 {
     margin-bottom: 10px;
 }
-/*.triptych p:hover {*/
-    /*box-shadow: 0 10px 20px rgba(3,27,78,.1);*/
-/*}*/
+
+.triptych div span {
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    font-size: 20px;
+}
 
 pre {
     background-color: #eeeeee;
