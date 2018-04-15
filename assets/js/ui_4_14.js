@@ -4,7 +4,7 @@
     // let startedFpsSectionAutoplay = false;
 
     const installCode = document.getElementById('installCode');
-    const zeoSection = document.getElementById('mlSection');
+    const zeoSection = document.getElementById('speed');
     // const fpsSection = document.getElementById('fpsSection');
     const zeoVid = document.getElementById('zeo');
     const overlay1 = document.getElementById('zeoOverlay');
@@ -45,7 +45,7 @@
     window.addEventListener('scroll', function () {
       // const fpsSectionTop = fpsSection.getBoundingClientRect().top;
       const zeoSectionTop = zeoSection.getBoundingClientRect().top;
-      if (zeoSectionTop < 60 && !startedZeoSectionAutoplay) {
+      if (zeoSectionTop < 100 && !startedZeoSectionAutoplay) {
         zeoVid.play();
         overlay1.classList.add('hide');
         startedZeoSectionAutoplay = true;

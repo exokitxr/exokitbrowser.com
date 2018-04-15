@@ -259,8 +259,19 @@ section h2 {
     background-image: url('../images/ml-lightwear.jpg');
 }
 
+/*.introImage {*/
+    /*background-image: url('../images/zeo.png');*/
+/*}*/
+
 .introImage {
-    background-image: url('../images/zeo.png');
+    overflow: hidden;
+}
+
+.introImage video {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: -50%;
 }
 
 .detailImage {
@@ -357,6 +368,11 @@ section h2 {
     margin-right: 0;
 }
 
+.vidWrapper {
+    position: relative;
+    height: 100%;
+}
+
 .videoWrapper {
     position: relative;
     overflow: hidden;
@@ -384,8 +400,6 @@ section h2 {
 }
 
 .videoOverlay.hide, .videoOverlay.hide:hover {
-    /*background-image: none;*/
-    /*background-color: transparent;*/
     opacity: 0;
 }
 
@@ -550,6 +564,12 @@ p.contribute a:hover, p.contribute a:focus {
     }
 }
 
+@media (min-width: 560px) {
+    .introImage video {
+        left: -25%;
+    }
+}
+
 @media (min-width: 600px) {
     .platforms {
         padding: 0 60px;
@@ -558,6 +578,13 @@ p.contribute a:hover, p.contribute a:focus {
         /*height: 220px;*/
     }
 }
+
+@media (min-width: 690px) {
+    .introImage video {
+        left: 0;
+    }
+}
+
 
 @media (min-width: 768px) {
     section h2 {
@@ -582,8 +609,12 @@ p.contribute a:hover, p.contribute a:focus {
         height: 100%;
     }
 
+    .introImage video {
+        left: -15%;
+    }
+
     .supportingTitle {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .platforms {

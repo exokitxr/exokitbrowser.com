@@ -111,13 +111,13 @@
 
     <section class="supporting" id="mlSection">
       <div class="supportingTitle"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
-      <div class="videoWrapper">
-        <video id="zeo" playsinline muted loop>
-        <source src="/assets/video/zeo_xo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-        <div class="videoOverlay" id="zeoOverlay"></div>
-      </div>
+      <!--<div class="videoWrapper">-->
+        <!--<video id="zeo" playsinline muted loop>-->
+        <!--<source src="/assets/video/zeo_xo.mp4" type="video/mp4">-->
+        <!--Your browser does not support the video tag.-->
+        <!--</video>-->
+        <!--<div class="videoOverlay" id="zeoOverlay"></div>-->
+      <!--</div>-->
 
       <p class="supportingDetails">
         Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
@@ -125,8 +125,16 @@
       <p class="">It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</p>
     </section>
 
-    <section class="intro main">
-      <div class="introImage"></div>
+    <section class="intro main" id="speed">
+      <div class="introImage">
+        <div class="vidWrapper">
+          <video id="zeo" playsinline muted loop>
+            <source src="/assets/video/zeo_xo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay" id="zeoOverlay"></div>
+        </div>
+      </div>
       <div class="introText">
         <div class="introTagline">
           <h1>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is built for speed</h1>
@@ -135,19 +143,19 @@
     </section>
 
     <section class="supporting introSupporting" id="fpsSection">
-      <div class="supportingTitle"><h2>And for making awesome things...<br/>Even awesomer.</h2></div>
+      <div class="supportingTitle"><h2>A browser for the post-2D world</h2></div>
       <div class="triptych">
           <div>
             <h4 class="xo-pink">Experiences</h4>
-            <span>Exokit uses native modules for high-performance rendering. The rest is pure JavaScript.</span>
+            <span>Exokit uses native code for high-performance rendering. The rest is pure JavaScript.</span>
           </div>
         <div>
           <h4 class="xo-pink">Experimentation</h4>
-          <span>It's totally open-source, and unlike other browsers, isn't held back by the need to support legacy APIs.</span>
+          <span>Exokit is totally open-source, and unlike other browsers, isn't held back by the need to support legacy APIs.</span>
         </div>
         <div>
           <h4 class="xo-pink">Evolution</h4>
-          <span>The end result is a browser that can move as quickly as the web does, and that is changeable by editing a .js file.</span>
+          <span>The end result is a browser that can move as quickly as the web does, and that can be changed by editing a .js file.</span>
         </div>
       </div>
     </section>
@@ -280,7 +288,7 @@
               "distance": 80,
               "size": 6,
               "duration": 0.3,
-              "opacity": 0.8,
+              "opacity": 0.6,
               "speed": 3
             },
             "repulse": {
@@ -297,7 +305,9 @@
         },
         "retina_detect": false
       };
-      particlesJS('particles-js', particlesConfig);
+      if (window.innerWidth >= 768) {
+        particlesJS('particles-js', particlesConfig);
+      }
     </script>
   </body>
 
