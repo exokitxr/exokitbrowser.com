@@ -1,17 +1,17 @@
 (function() {
   window.onload = function() {
-    // let startedMlSectionAutoplay = false;
-    let startedFpsSectionAutoplay = false;
+    let startedZeoSectionAutoplay = false;
+    // let startedFpsSectionAutoplay = false;
 
     const installCode = document.getElementById('installCode');
-    // const mlSection = document.getElementById('mlSection');
-    const fpsSection = document.getElementById('fpsSection');
-    // const mlVideo = document.getElementById('ml');
-    // const overlay1 = document.getElementById('mlOverlay');
-    const chromeOverlay = document.getElementById('chromeOverlay');
-    const exoOverlay = document.getElementById('exoOverlay');
-    const fpsChrome = document.getElementById('fpsChrome');
-    const fpsExo = document.getElementById('fpsExo');
+    const zeoSection = document.getElementById('mlSection');
+    // const fpsSection = document.getElementById('fpsSection');
+    const zeoVid = document.getElementById('zeo');
+    const overlay1 = document.getElementById('zeoOverlay');
+    // const chromeOverlay = document.getElementById('chromeOverlay');
+    // const exoOverlay = document.getElementById('exoOverlay');
+    // const fpsChrome = document.getElementById('fpsChrome');
+    // const fpsExo = document.getElementById('fpsExo');
 
     function selectText(elementId, copyIt) {
       if (document.selection) {
@@ -28,36 +28,14 @@
       }
     }
 
-    // overlay1.addEventListener('click', function() {
-    //   if (mlVideo.paused) {
-    //     mlVideo.play();
-    //     overlay1.classList.add('hide');
-    //   } else {
-    //     mlVideo.pause();
-    //     overlay1.classList.remove('hide');
-    //   }
-    // });
-
-    function startStopFpsVideos() {
-      if (fpsChrome.paused) {
-        fpsChrome.play();
-        fpsExo.play();
-        chromeOverlay.classList.add('hide');
-        exoOverlay.classList.add('hide');
+    overlay1.addEventListener('click', function() {
+      if (zeoVid.paused) {
+        zeoVid.play();
+        overlay1.classList.add('hide');
       } else {
-        fpsChrome.pause();
-        fpsExo.pause();
-        chromeOverlay.classList.remove('hide');
-        exoOverlay.classList.remove('hide');
+        zeoVid.pause();
+        overlay1.classList.remove('hide');
       }
-    }
-
-    chromeOverlay.addEventListener('click', function() {
-      startStopFpsVideos();
-    });
-
-    exoOverlay.addEventListener('click', function() {
-      startStopFpsVideos();
     });
 
     installCode.addEventListener('click', function() {
@@ -65,22 +43,13 @@
     });
 
     window.addEventListener('scroll', function () {
-      const fpsSectionTop = fpsSection.getBoundingClientRect().top;
-      // const mlSectionTop = mlSection.getBoundingClientRect().top;
-      if (fpsSectionTop < 60 && !startedFpsSectionAutoplay) {
-        // const fpsChrome = document.getElementById('fpsChrome');
-        // const fpsExo = document.getElementById('fpsExo');
-        fpsChrome.play();
-        fpsExo.play();
-        chromeOverlay.classList.add('hide');
-        exoOverlay.classList.add('hide');
-        startedFpsSectionAutoplay = true;
+      // const fpsSectionTop = fpsSection.getBoundingClientRect().top;
+      const zeoSectionTop = zeoSection.getBoundingClientRect().top;
+      if (zeoSectionTop < 60 && !startedZeoSectionAutoplay) {
+        zeoVid.play();
+        overlay1.classList.add('hide');
+        startedZeoSectionAutoplay = true;
       }
-      // else if (mlSectionTop < 60 && !startedMlSectionAutoplay) {
-      //   mlVideo.play();
-      //   overlay1.classList.add('hide');
-      //   startedMlSectionAutoplay = true;
-      // }
     });
   };
 })();

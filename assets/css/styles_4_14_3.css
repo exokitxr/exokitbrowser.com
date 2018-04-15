@@ -370,18 +370,20 @@ section h2 {
     top: 0;
     right: 0;
     bottom: 0;
+    opacity: 1;
     background-color: rgba(0,0,0,0.2);
     background-image: url('../images/play@2x.png');
     background-size: auto 40px;
     background-repeat: no-repeat;
     background-position: center center;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, opacity 0.2s;
     cursor: pointer;
 }
 
 .videoOverlay.hide, .videoOverlay.hide:hover {
-    background-image: none;
-    background-color: transparent;
+    /*background-image: none;*/
+    /*background-color: transparent;*/
+    opacity: 0;
 }
 
 .videoOverlay:hover {
@@ -437,6 +439,36 @@ section h2 {
 .supporting p:last-of-type {
     margin-bottom: 0;
 }
+
+#fpsSection .supportingTitle {
+    margin-bottom: 60px;
+}
+
+.triptych {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.triptych div {
+    /*box-shadow: 0 2px 4px rgba(3,27,78,.06);*/
+    /*border: 1px solid #e5e8ed;*/
+    /*border-radius: 5px;*/
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    /*transition: box-shadow .25s linear;*/
+}
+
+.triptych div h4 {
+    margin-bottom: 10px;
+}
+/*.triptych p:hover {*/
+    /*box-shadow: 0 10px 20px rgba(3,27,78,.1);*/
+/*}*/
 
 pre {
     background-color: #eeeeee;
@@ -527,7 +559,7 @@ p.contribute a:hover, p.contribute a:focus {
 
 @media (min-width: 768px) {
     section h2 {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .show-for-medium {
@@ -572,19 +604,43 @@ p.contribute a:hover, p.contribute a:focus {
         background-size: 55px auto;
     }
 
-    .about {
+    .triptych {
         flex-wrap: nowrap;
-        border-top: 1px solid #e5e8ed;
     }
 
-    .topics {
-        width: 260px;
-        padding: 0 0 0 60px;
+    .triptych div {
+        max-width: calc((100% / 3) - 10px);
+        flex-basis: calc((100% / 3) - 10px);
+        margin-right: 15px;
+        height: 300px;
+        text-align: center;
     }
 
-    .content {
-        width: calc(100% - 260px);
+    .triptych div h4 {
+        margin-bottom: 20px;
     }
+
+    .triptych div span {
+        font-size: 18px;
+    }
+
+    .triptych div:last-child {
+        margin-right: 0;
+    }
+
+    /*.about {*/
+        /*flex-wrap: nowrap;*/
+        /*border-top: 1px solid #e5e8ed;*/
+    /*}*/
+
+    /*.topics {*/
+        /*width: 260px;*/
+        /*padding: 0 0 0 60px;*/
+    /*}*/
+
+    /*.content {*/
+        /*width: calc(100% - 260px);*/
+    /*}*/
 }
 
 @media (min-width: 992px) {
