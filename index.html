@@ -62,70 +62,80 @@
       gtag('config', 'UA-117505101-1');
     </script>
   </head>
-
-  <body id="page-top" itemscope itemtype="http://schema.org/WebPage">
-
-    <div class="siteNav" id="mainNav" itemscope itemtype="http://schema.org/WPHeader">
+  <body id="page-top" itemscope itemtype="http://schema.org/ItemPage">
+    <meta itemprop="additionalType" content="http://schema.org/WebPage" />
+    <nav class="siteNav" id="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit Home</a>
         <div class="navOptions" id="navbarResponsive">
           <ul class="navList" role="navigation">
             <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Install Exokit" />
+              <meta itemprop="potentialAction" content="https://exokitbrowser.com#install" />
               <a class="nav-link js-scroll-trigger" href="#install" itemprop="url">Install</a>
             </li>
             <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Documentation and FAQ" />
               <a class="nav-link" href="//docs.webmr.io" target="_blank" itemprop="url">Docs</a>
             </li>
             <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="GitHub Repository" />
               <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit" itemprop="url">Github</a>
             </li>
             <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Twitch Channel" />
               <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer" itemprop="url">Twitch</a>
             </li>
             <li class="navItem badgeItem" itemprop="name">
+              <meta itemprop="description" content="Join Our Slack" />
               <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank" itemprop="url">Join the Slack</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <section class="titleSection">
+    <section class="titleSection" id="exokit-header" itemscope itemtype="http://schema.org/WebPageElement">
       <div id="particles-js"></div>
-      <h1 itemprop="description"><span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span></h1>
+      <h1 itemprop="description">
+        <span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span>
+      </h1>
       <div class="startLinks" id="titleStartLinks">
-        <a class="getStarted" href="//docs.webmr.io" target="_blank">Get Started</a>
-        <a class="getStarted invert" target="_blank" href="https://github.com/webmixedreality/exokit">GitHub</a>
+        <a class="getStarted" href="//docs.webmr.io" target="_blank" itemprop="potentialAction">Get Started</a>
+        <a class="getStarted invert" target="_blank" href="https://github.com/webmixedreality/exokit" itemprop="potentialAction">GitHub</a>
       </div>
       <a href="#hero" class="js-scroll-trigger"><div class="more"></div></a>
     </section>
 
-    <section class="hero main" id="hero">
+    <section class="hero main" id="hero" itemscope itemtype="http://schema.org/WebPageElement">
+      <meta itemprop="name" content="Exokit Runs on Magic Leap" />
       <div class="heroText">
         <div class="heroTagline">
-          <h1>Build and experience AR websites today</h1>
+          <h1 itemprop="description">Build and experience AR websites today</h1>
         </div>
       </div>
-      <div class="heroImage"></div>
+      <div class="heroImage" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="name" content="Magic Leap Runs Exokit" />
+        <meta itemprop="url" content="https://exokitbrowser.com/images/ml-lightwear.jpg" />
+      </div>
     </section>
 
-    <section class="supporting" id="mlSection">
-      <div class="supportingTitle"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
-      <!--<div class="videoWrapper">-->
-        <!--<video id="zeo" playsinline muted loop>-->
-        <!--<source src="/assets/video/zeo_xo.mp4" type="video/mp4">-->
-        <!--Your browser does not support the video tag.-->
-        <!--</video>-->
-        <!--<div class="videoOverlay" id="zeoOverlay"></div>-->
-      <!--</div>-->
-
-      <p class="supportingDetails">
-        Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
-      </p>
-      <p class="">It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</p>
+    <section class="supporting" id="mlSection" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="supportingTitle" itemprop="name"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
+      <span itemprop="description">
+        <p class="supportingDetails" itemscope itemtype="http://schema.org/WebPageElement">
+          Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
+        </p>
+        <p class="">It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</p>
+      </span>
     </section>
 
-    <section class="intro main" id="speed">
+    <section class="intro main" id="speed" itemscope itemtype="http://schema.org/VideoObject">
+      <meta itemprop="description" content="Demo of Exokit running zeovr.io at over 60 fps" />
+      <meta itemprop="thumbnailUrl" content="https://exokitbrowser.com/images/zeo_thumb.png" />
+      <meta itemprop="uploadDate" content="2018-04-15" />
+      <meta itemprop="name" content="Zeo (Minecraft Clone) on Exokit" />
+      <meta itemprop="url" content="https://exokitbrowser.com/video/zeo_xo.mp4" />
       <div class="introImage">
         <div class="vidWrapper">
           <video id="zeo" playsinline muted loop>
@@ -142,8 +152,8 @@
       </div>
     </section>
 
-    <section class="supporting introSupporting" id="fpsSection">
-      <div class="supportingTitle"><h2>A browser for the post-2D world</h2></div>
+    <section class="supporting introSupporting" id="fpsSection" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="supportingTitle" itemprop="description"><h2>A browser for the post-2D world</h2></div>
       <div class="triptych">
           <div>
             <h4 class="xo-pink">Experiences</h4>
@@ -160,7 +170,7 @@
       </div>
     </section>
 
-    <section class="detail main">
+    <section class="detail main" itemscope itemtype="http://schema.org/WebPageElement">
       <div class="detailText">
         <div class="detailTagline">
           <h1>JS + HTML<br/>=<br/>AR Websites</h1>
@@ -169,7 +179,7 @@
       <div class="detailImage"></div>
     </section>
 
-    <section class="supporting detailSupporting" id="install">
+    <section class="supporting detailSupporting" id="install" itemscope itemtype="http://schema.org/WebPageElement">
       <div class="supportingTitle"><h2>Install with npm.<br/>Build mixed reality websites with JS.</h2></div>
       <pre id="installCode"><span></span>npm install -g exokit</pre>
       <p class="margin60">With Exokit, you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</p>
@@ -179,7 +189,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer itemscope itemtype="http://schema.org/WebPageElement" id="footer">
       &#169; Copyright 2018 WebMR
     </footer>
 

@@ -21,7 +21,7 @@ html, *, *::before, *::after {
     display: none;
 }
 
-#mainNav .navbar-brand {
+#main-nav .navbar-brand {
     color: transparent;
     width: 108px;
     height: 59px;
@@ -32,10 +32,10 @@ html, *, *::before, *::after {
     background-position: center center;
 }
 
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active,
-#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover,
-#mainNav span.xo-pink, #mainNav span.xo-orange,
-#mainNav.navbar-shrink span.xo-pink, #mainNav.navbar-shrink span.xo-orange {
+#main-nav .navbar-brand:hover, #main-nav .navbar-brand:focus, #main-nav .navbar-brand:active,
+#main-nav.navbar-shrink .navbar-brand:focus, #main-nav.navbar-shrink .navbar-brand:hover,
+#main-nav span.xo-pink, #main-nav span.xo-orange,
+#main-nav.navbar-shrink span.xo-pink, #main-nav.navbar-shrink span.xo-orange {
     color: transparent;
 }
 
@@ -44,14 +44,14 @@ only screen and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and (   min--moz-device-pixel-ratio: 1.25),
 only screen and (     -o-min-device-pixel-ratio: 5/4),
 only screen and (        min-device-pixel-ratio: 1.25) {
-    #mainNav .navbar-brand {
+    #main-nav .navbar-brand {
         width: 54px;
         height: 40px;
     }
 }
 
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active,
-#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+#main-nav .navbar-brand:hover, #main-nav .navbar-brand:focus, #main-nav .navbar-brand:active,
+#main-nav.navbar-shrink .navbar-brand:focus, #main-nav.navbar-shrink .navbar-brand:hover {
     color: transparent;
 }
 
@@ -684,17 +684,17 @@ p.contribute a:hover, p.contribute a:focus {
         background-position: 20% center;
     }
 
-    #mainNav {
+    #main-nav {
         background-color: #ffffff;
     }
 
-    #mainNav .navbar-nav > li > a:hover,
-    #mainNav .navbar-nav > li > a:focus:hover {
+    #main-nav .navbar-nav > li > a:hover,
+    #main-nav .navbar-nav > li > a:focus:hover {
         color: #DD6F84;
     }
 
-    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a,
-    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+    #main-nav .navbar-nav > li > a, #main-nav .navbar-nav > li > a,
+    #main-nav .navbar-nav > li > a, #main-nav .navbar-nav > li > a:focus {
         color: #000000;
     }
 
@@ -702,7 +702,7 @@ p.contribute a:hover, p.contribute a:focus {
         display: none;
     }
 
-    #mainNav.navbar-shrink .navbar-brand {
+    #main-nav.navbar-shrink .navbar-brand {
         color: transparent;
     }
 }
