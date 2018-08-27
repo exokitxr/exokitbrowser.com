@@ -1,0 +1,6 @@
+# Settings
+plugins:
+  - jekyll-remote-theme
+remote_theme: chromatical/jekyll-materialdocs
+highlighter: rouge
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "webpack.config.js", "package.json", "package-lock.json"]
