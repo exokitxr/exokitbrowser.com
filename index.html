@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Exokit, WebMR, Web Mixed Reality, Web Browser, AR, VR, Magic Leap, WebVR, MR, Augmented Reality, Virtual Reality, Cross Platform, OpenGL, WebGL, Twitch, avaer, Development, webmixedreality, API, Programming, Node.js, ES6, ES7, JavaScript, OpenVR, games" />
+    <meta name="description" content="Exokit is a brand new, fast, post-screen era web browser written in JavaScript. If a WebGL site runs in Chrome, it will probably run twice as fast in Exokit." />
+    <title>Exokit: A super fast web browser for AR and VR</title>
+
+    <meta property="og:title" content="Exokit"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://exokitbrowser.com/"/>
+    <meta property="og:image" content="https://exokitbrowser.com/images/xo@2x.png"/>
+    <meta property="og:description" content="Exokit is a brand new, fast, post-screen web browser."/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Exokit">
+    <meta name="application-name" content="Exokit">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="/assets/css/new-age.css" rel="stylesheet">
+    <link type="text/css" href="/assets/css/styles_4_16.css" rel="stylesheet" />
+
+    <!-- start Mixpanel --><script>(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("b2f7f27d26e12baa7cc92f19b958fa61", {
+    loaded: function() {
+      const now = new Date();
+      const id = mixpanel.get_distinct_id();
+      mixpanel.identify(id);
+      mixpanel.people.set_once('First visited', now.toLocaleDateString().concat(' ').concat(now.toLocaleTimeString()));
+      mixpanel.track_links('.nav-link', 'Clicked nav link');
+      mixpanel.track('Page View', { pageName: 'Main Landing', pageUrl: 'exokitbrowser.com' });
+    },
+  });</script><!-- end Mixpanel -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117505101-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117505101-1');
+    </script>
+  </head>
+  <body id="page-top" itemscope itemtype="http://schema.org/ItemPage">
+    <meta itemprop="additionalType" content="http://schema.org/WebPage" />
+    <nav class="siteNav" id="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit Home</a>
+        <div class="navOptions" id="navbarResponsive">
+          <ul class="navList">
+            <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Install Exokit" />
+              <meta itemprop="potentialAction" content="https://exokitbrowser.com#install" />
+              <a class="nav-link js-scroll-trigger" href="#install" itemprop="url">Install</a>
+            </li>
+            <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Documentation and FAQ" />
+              <a class="nav-link" href="//docs.webmr.io" target="_blank" itemprop="url">Docs</a>
+            </li>
+            <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="GitHub Repository" />
+              <a target="_blank" class="nav-link" href="https://github.com/webmixedreality/exokit" itemprop="url">Github</a>
+            </li>
+            <li class="navItem" itemprop="name">
+              <meta itemprop="description" content="Twitch Channel" />
+              <a target="_blank" class="nav-link" href="https://www.twitch.tv/avaer" itemprop="url">Twitch</a>
+            </li>
+            <li class="navItem badgeItem" itemprop="name">
+              <meta itemprop="description" content="Join Our Slack" />
+              <a class="slack-badge nav-link" href="https://exoslack.now.sh" target="_blank" itemprop="url">Join the Slack</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="titleSection" id="exokit-header" itemscope itemtype="http://schema.org/WebPageElement">
+      <div id="particles-js"></div>
+      <h1 itemprop="description">
+        <span>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span>
+      </h1>
+      <div class="startLinks" id="titleStartLinks">
+        <a class="getStarted" href="//docs.webmr.io" target="_blank" itemprop="potentialAction">Get Started</a>
+        <a class="getStarted invert" target="_blank" href="https://github.com/webmixedreality/exokit" itemprop="potentialAction">GitHub</a>
+      </div>
+      <a href="#hero" class="js-scroll-trigger"><div class="more"></div></a>
+    </section>
+
+    <section class="hero main" id="hero" itemscope itemtype="http://schema.org/WebPageElement">
+      <meta itemprop="name" content="Exokit Runs on Magic Leap" />
+      <div class="heroText">
+        <div class="heroTagline">
+          <h1 itemprop="description">Build and experience AR websites today</h1>
+        </div>
+      </div>
+      <div class="heroImage" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="name" content="Magic Leap Runs Exokit" />
+        <meta itemprop="url" content="https://exokitbrowser.com/images/ml-lightwear.jpg" />
+      </div>
+    </section>
+
+    <section class="supporting" id="mlSection" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="supportingTitle" itemprop="name"><h2>Magic Leap — or legacy VR.<br/>Or your grandpa’s 2D screens.</h2></div>
+      <div itemprop="description">
+        <p class="supportingDetails" itemscope itemtype="http://schema.org/WebPageElement">
+          Under the hood, everything is plain OpenGL, so Exokit plays nicely with Windows, Linux, macOS, iOS, Android, and even Magic Leap.
+        </p>
+        <p class="">It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</p>
+      </div>
+    </section>
+
+    <section class="intro main" id="speed" itemscope itemtype="http://schema.org/VideoObject">
+      <meta itemprop="description" content="Demo of Exokit running zeovr.io at over 60 fps" />
+      <meta itemprop="thumbnailUrl" content="https://exokitbrowser.com/images/zeo_thumb.png" />
+      <meta itemprop="uploadDate" content="2018-04-15" />
+      <meta itemprop="name" content="Zeo (Minecraft Clone) on Exokit" />
+      <meta itemprop="url" content="https://exokitbrowser.com/video/zeo_xo.mp4" />
+      <div class="introImage">
+        <div class="vidWrapper">
+          <video id="zeo" playsinline muted loop>
+            <source src="/assets/video/zeo_xo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="videoOverlay" id="zeoOverlay"></div>
+        </div>
+      </div>
+      <div class="introText">
+        <div class="introTagline">
+          <h1>E<span class="xo-pink">x</span><span class="xo-orange">o</span>kit is built for speed</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="supporting introSupporting" id="fpsSection" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="supportingTitle" itemprop="description"><h2>A browser for the post-2D world</h2></div>
+      <div class="triptych">
+          <div>
+            <h4 class="xo-pink">Experiences</h4>
+            <span>Exokit uses native code for high-performance rendering. The rest is pure JavaScript.</span>
+          </div>
+        <div>
+          <h4 class="xo-pink">Experimentation</h4>
+          <span>Exokit is totally open-source, and unlike other browsers, isn't held back by the need to support legacy APIs.</span>
+        </div>
+        <div>
+          <h4 class="xo-pink">Evolution</h4>
+          <span>The end result is a browser that can move as quickly as the web does, and that can be changed by editing a .js file.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail main" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="detailText">
+        <div class="detailTagline">
+          <h1>JS + HTML<br/>=<br/>AR Websites</h1>
+        </div>
+      </div>
+      <div class="detailImage"></div>
+    </section>
+
+    <section class="supporting detailSupporting" id="install" itemscope itemtype="http://schema.org/WebPageElement">
+      <div class="supportingTitle"><h2>Install with npm.<br/>Build mixed reality websites with JS.</h2></div>
+      <pre id="installCode"><span></span>npm install -g exokit</pre>
+      <p class="margin60">With Exokit, you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</p>
+      <div class="startLinks">
+        <a class="getStarted" href="//docs.webmr.io" target="_blank">Get Started</a>
+        <a class="getStarted invert" target="_blank" href="https://github.com/webmixedreality/exokit">GitHub</a>
+      </div>
+    </section>
+
+    <footer itemscope itemtype="http://schema.org/WebPageElement" id="footer">
+      &#169; Copyright 2018 WebMR
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/assets/js/new-age_4_16.min.js"></script>
+    <script src="/assets/js/ui_4_15.js"></script>
+    <script src="/assets/vendor/particles.min.js"></script>
+    <script>
+      const particlesConfig = {
+        "particles": {
+          "number": {
+            "value": 200,
+            "density": {
+              "enable": true,
+              "value_area": 300
+            }
+          },
+          "color": {
+            "value": "#dd6f84"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 6,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 496,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "bottom",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "onclick": {
+              "enable": false,
+              "mode": "repulse"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 0.5
+              }
+            },
+            "bubble": {
+              "distance": 80,
+              "size": 6,
+              "duration": 0.3,
+              "opacity": 0.6,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 63.73689410115041,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": false
+      };
+      if (window.innerWidth >= 768) {
+        particlesJS('particles-js', particlesConfig);
+      }
+    </script>
+  </body>
+
+</html>
